@@ -1,0 +1,10 @@
+    table {
+      border-collapse: collapse;
+      position: relative;
+      margin-left: 43%;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 3px 5px;
+    }	

@@ -12,7 +12,7 @@
 	<table class="table_style" id="lol">
 	
 			<tr>
-				<td onmouseover="Show('block', 1);">1.1</td>
+				<td onclick="this.innerHTML = 'упс'">1.1</td>
 				<td>2.1</td>
 				<td>3.1</td>
 				<td>4.1</td>
@@ -21,7 +21,7 @@
 			</tr>
 			<tr>
 				<td>1.2</td>
-				<td>2.2</td>
+				<td onclick="this.innerHTML = 'упс'">2.2</td>
 				<td>3.2</td>
 				<td>4.2</td>
 				<td>5.2</td>
@@ -30,7 +30,7 @@
 			<tr>
 				<td>1.3</td>
 				<td>2.3</td>
-				<td>3.3</td>
+				<td onclick="this.innerHTML = 'упс'">3.3</td>
 				<td>4.3</td>
 				<td>5.3</td>
 				<td><button onclick="del(this)" type="submit" style="width: 100%; height: 100%">del</button></td>	
@@ -39,8 +39,8 @@
 				<td>1.4</td>
 				<td>2.4</td>
 				<td>3.4</td>
-				<td>4.4</td>
-				<td>5.4</td>
+				<td onclick="this.innerHTML = 'упс'">4.4</td>
+				<td >5.4</td>
 				<td><button onclick="del(this)" type="submit" style="width: 100%; height: 100%">del</button></td>
 			</tr>
 			<tr>
@@ -48,13 +48,24 @@
 				<td>2.5</td>
 				<td>3.5</td>
 				<td>4.5</td>
-				<td>5.5</td>
+				<td onclick="this.innerHTML = 'упс'">5.5</td>
 				<td><button onclick="del(this)" type="submit" style="width: 100%; height: 100%">del</button></td>
 			</tr>
 
-		
 	</table>
 <script type="text/javascript" src="DOM_model.js"></script>
 <p align="center">Текст после скрипта Java Script</p>
+
+
+<button onclick="alert('Ну еще разочек: ' + this.innerHTML)">Нажми меня=)</button> 
+<br><br><br>
+<button onclick="this.innerHTML = 'Вот и живи теперь с этой кнопкой!'">Не нажимать!</button>
+<div class="intuition">
+	<h3>Тренировка интуиции</h3>
+	<p>Угадай число 0..10</p>
+	<button id="but" onclick="this.innerHTML = Math.round(Math.random()*10)">Угадать</button>
+</div>
+
+<button onclick="gett()">GET</button>
 </body>
 </html>
